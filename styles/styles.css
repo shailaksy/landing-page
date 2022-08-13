@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background: #CDAF95;
+}
+
+header > nav > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 30% 20% 50%;
+}
+
+footer > #socials > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.social-icons {
+  height: 20px;
+  width: 20px;
+}/*# sourceMappingURL=styles.css.map */
