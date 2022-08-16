@@ -1,0 +1,55 @@
+#more-info {
+    padding: 11vmin;
+    background-color: white;
+}
+
+#more-info h3 {
+    font-family: $font-stack;
+    font-size: 4vmin;
+    text-align: center;
+    padding: 5vmin;
+    letter-spacing: 1.5vmin;
+    animation: fadeIn 6s ease-in-out infinite alternate;
+}
+
+#more-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.notes {
+    padding: 2vmin;
+}
+
+.note-inspo {
+    height: 40vmin;
+    width: 40vmin;
+    display: block;
+    margin: 0 auto;
+    padding: 1vmin;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.note-inspo:hover {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    
+}
+
+.notes h4 {
+    font-family: $font-stack;
+    font-size: 2.5vmin;
+    text-align: center;
+    letter-spacing: 0.5vmin;
+    padding-top: 3.5vmin;
+}
+
+.notes p {
+    font-family: $font-2;
+    font-size: 2vmin;
+    text-align: justify;
+    padding: 2vmin;
+}

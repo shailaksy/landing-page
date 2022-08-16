@@ -1,0 +1,69 @@
+#headline {
+    height: 100vmin;
+    padding-top: 10vmin;
+    color: $primary-color;
+    background: url(/assets/bg.png) no-repeat;
+    background-size: cover;
+}
+
+#headline-container {
+    margin: 10vmin;
+    margin-top: 15vmin;
+    padding: 2vmin;
+}
+
+.headline-media {
+    text-shadow: 1vmin 1vmin 1.5vmin grey;
+}
+
+#headline-main h1 {
+    font-family: $font-stack;
+    width: 60%;
+    letter-spacing: 2vmin;
+    background: linear-gradient(-45deg, #584c67, $primary-color, black, #a864f6, rgb(228, 228, 166), white);
+	background-size: 300%;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 12s ease-in-out infinite;
+	-moz-animation: animated_text 12s ease-in-out infinite;
+	-webkit-animation: animated_text 12s ease-in-out infinite;
+}
+
+#title1 {
+    font-size: 9vmin;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title2 {
+    font-size: 13.5vmin;
+    text-align: center;
+}
+
+#headline-sub {
+    padding-top: 8vmin;
+    text-align: center;
+    width: 60%;
+}
+
+#headline-sub h3 {
+    font-family: $font-stack;
+    font-size: 5vmin;
+    letter-spacing: 3vmin;
+    padding: 1.2vmin;
+    animation: fadeIn 7s ease-in;
+}
+
+#headline-sub p {
+    font-family: $font-2;
+    font-style: italic;
+    font-size: 3vmin;
+    padding: 1.2vmin;
+    letter-spacing: 0.3vmin;
+    animation: fadeIn 7s ease-in;
+}
+
+#omnia {
+    height: 65vmin;
+    width: 65vmin;
+}

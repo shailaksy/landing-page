@@ -4,5 +4,5 @@
     const urlParams = new URLSearchParams(qStr)
     const name = urlParams.get('name')
   
-    dataName.textContent = `Welcome to the club, ${name}! ♡`
+    dataName.textContent = `Welcome to Bulgari, ${name}`
   })()

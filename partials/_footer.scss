@@ -1,17 +1,159 @@
 footer {
+    background-color: black;
+    padding: 5vmin;
     display: grid;
-    grid-template-columns: 30% 20% 50%;
+    grid-template-columns: 20% 20% 20% 40%;
 }
 
-footer > #socials > ul {
-    display: flex;
+.f-container {
+    padding: 2vmin;
+}
+
+footer > #others > ul,
+footer > #brand > ul {
     list-style-type: none;
-    justify-content: center;
+    font-family: $font-2;
+    font-size: 2vmin;
+    color: white;
 }
 
-.social-icons {
-    height: 20px;
-    width: 20px;
+footer > #others > ul > li,
+footer > #brand > ul > li,
+#subscribe h5,
+#subscribe p,
+label {
+    padding: 2vmin;
+    color: white;
 }
 
-//* https://www.youtube.com/watch?v=mrTwZmdfRVE *//
+#subscribe h5 {
+    font-family: $font-stack;
+    font-size: 4vmin;
+}
+
+.f-container li a:link, 
+.f-container li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.f-container li a:hover,
+.f-container li a:active {
+    color: white;
+    text-shadow: 0 0 4vmin $primary-color, 0 0 2vmin white;
+    transition-duration: 0.4s;
+}
+
+#subscribe p {
+    text-align: justify;
+    font-family: $font-2;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 1vmin 1vmin;
+    margin: 2vmin;
+    border: none;
+    border-bottom: 0.2vmin solid white;
+    background-color: transparent;
+    color: white;
+    font-family: $font-2;
+}
+
+textarea {
+    resize: none;
+}
+
+ #socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-facebook-square,
+.fa-instagram {
+    font-size: 5vmin;
+}
+
+.fa-youtube-play {
+    font-size: 4vmin;
+}
+
+.fa {
+    margin: 1.5vmin;
+    position: relative;
+    text-decoration: none;
+    width: 7vmin;
+    height: 7vmin;
+    border: 0.3vmin solid white;
+    border-radius: 50%;
+    color: white;
+}
+
+.fa::before {
+    position: absolute;
+    z-index: 1;
+    top: 1vmin;
+    left: 1vmin;
+    transform: translate (-50%, -50%);
+}
+
+.fa::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.fa::after {
+    background: transparent;
+    transform: 0.4s;
+}
+
+.fa:hover:after {
+    transform: scale(1);
+    opacity: 0;
+}
+
+.fa:hover {
+    color: $primary-color;
+    background-color: white;
+    transition-duration: 0.4s;
+}
+
+#subscribe p, 
+label, 
+::placeholder {
+    font-family: $font-2;
+    font-size: 2vmin;
+}
+
+::placeholder {
+    color: grey;
+}
+
+input[type=submit] {
+    font-family: $font-2;
+    font-size: 2vmin;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 2vmin 3vmin;
+    text-decoration: none;
+    display: block;
+    margin-top: 2vmin;
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: $primary-color;
+    transition-duration: 0.4s;
+} 

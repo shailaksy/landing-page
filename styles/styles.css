@@ -2,31 +2,604 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
-header {
-  background: #CDAF95;
+@-webkit-keyframes animated_text {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
 }
 
-header > nav > ul {
+@keyframes animated_text {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4c2882, 0 0 40px #4c2882, 0 0 50px #4c2882, 0 0 60px #000000, 0 0 70px #000000;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #4c2882, 0 0 40px #4c2882, 0 0 50px #4c2882, 0 0 60px #000000, 0 0 70px #000000, 0 0 80px #000000;
+  }
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4c2882, 0 0 40px #4c2882, 0 0 50px #4c2882, 0 0 60px #000000, 0 0 70px #000000;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #4c2882, 0 0 40px #4c2882, 0 0 50px #4c2882, 0 0 60px #000000, 0 0 70px #000000, 0 0 80px #000000;
+  }
+}
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+#navbar {
+  padding: 2vmin;
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Aboreto", serif;
+  font-size: 2vmin;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5vmin;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+#navbar li {
+  position: relative;
+  transition: transform ease 0.3s;
+}
+
+#navbar li:hover {
+  transform: translate(0, -15%);
+}
+
+#navbar li a:link,
+#navbar li a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar li a:hover,
+#navbar li a:active {
+  color: white;
+  text-shadow: 0 0 2vmin #4c2882, 0 0 4vmin white;
+  transition-duration: 0.4s;
+}
+
+#logo {
+  width: 35vmin;
+  height: auto;
+  filter: invert(100%);
+}
+
+.solid {
+  border: 0.5px solid white;
+}
+
+#headline {
+  height: 100vmin;
+  padding-top: 10vmin;
+  color: #4c2882;
+  background: url(/assets/bg.png) no-repeat;
+  background-size: cover;
+}
+
+#headline-container {
+  margin: 10vmin;
+  margin-top: 15vmin;
+  padding: 2vmin;
+}
+
+.headline-media {
+  text-shadow: 1vmin 1vmin 1.5vmin grey;
+}
+
+#headline-main h1 {
+  font-family: "Aboreto", serif;
+  width: 60%;
+  letter-spacing: 2vmin;
+  background: linear-gradient(-45deg, #584c67, #4c2882, black, #a864f6, rgb(228, 228, 166), white);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated_text 12s ease-in-out infinite;
+  -moz-animation: animated_text 12s ease-in-out infinite;
+  -webkit-animation: animated_text 12s ease-in-out infinite;
+}
+
+#title1 {
+  font-size: 9vmin;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title2 {
+  font-size: 13.5vmin;
+  text-align: center;
+}
+
+#headline-sub {
+  padding-top: 8vmin;
+  text-align: center;
+  width: 60%;
+}
+
+#headline-sub h3 {
+  font-family: "Aboreto", serif;
+  font-size: 5vmin;
+  letter-spacing: 3vmin;
+  padding: 1.2vmin;
+  -webkit-animation: fadeIn 7s ease-in;
+          animation: fadeIn 7s ease-in;
+}
+
+#headline-sub p {
+  font-family: "Arsenal", sans-serif;
+  font-style: italic;
+  font-size: 3vmin;
+  padding: 1.2vmin;
+  letter-spacing: 0.3vmin;
+  -webkit-animation: fadeIn 7s ease-in;
+          animation: fadeIn 7s ease-in;
+}
+
+#omnia {
+  height: 65vmin;
+  width: 65vmin;
+}
+
+#about {
+  padding: 15vmin;
+  background: url(/assets/crystal.gif) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vmin;
+}
+
+#about-container {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.about-text {
+  padding: 3vmin;
+  color: white;
+}
+
+#about-title,
+#about-subtitle {
+  font-family: "Aboreto", serif;
+}
+
+#about-title {
+  font-size: 11vmin;
+  text-align: right;
+  text-shadow: 1vmin 1vmin 1.5vmin black;
+}
+
+#about-subtitle {
+  font-size: 5vmin;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 2vmin;
+  text-shadow: 1vmin 1vmin 1.5vmin black;
+}
+
+#about-description {
+  font-family: "Arsenal", sans-serif;
+  width: 60%;
+  text-align: justify;
+  font-size: 3vmin;
+  text-shadow: 1vmin 1vmin 0.7vmin black;
+}
+
+#more-info {
+  padding: 11vmin;
+  background-color: white;
+}
+
+#more-info h3 {
+  font-family: "Aboreto", serif;
+  font-size: 4vmin;
+  text-align: center;
+  padding: 5vmin;
+  letter-spacing: 1.5vmin;
+  -webkit-animation: fadeIn 6s ease-in-out infinite alternate;
+          animation: fadeIn 6s ease-in-out infinite alternate;
+}
+
+#more-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.notes {
+  padding: 2vmin;
+}
+
+.note-inspo {
+  height: 40vmin;
+  width: 40vmin;
+  display: block;
+  margin: 0 auto;
+  padding: 1vmin;
+  filter: blur(3px);
+  transition: 0.3s ease-in-out;
+}
+
+.note-inspo:hover {
+  filter: blur(0);
+}
+
+.notes h4 {
+  font-family: "Aboreto", serif;
+  font-size: 2.5vmin;
+  text-align: center;
+  letter-spacing: 0.5vmin;
+  padding-top: 3.5vmin;
+}
+
+.notes p {
+  font-family: "Arsenal", sans-serif;
+  font-size: 2vmin;
+  text-align: justify;
+  padding: 2vmin;
+}
+
+#collection {
+  padding: 5vmin;
+  display: flex;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(76, 40, 130) 50%, rgb(255, 255, 255) 100%);
+  height: 80vmin;
+}
+
+iframe {
+  filter: blur(3px);
+  transition: 0.3s ease-in-out;
+}
+
+iframe:hover {
+  filter: blur(0);
+}
+
+#collection-text {
+  margin: 4vmin;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#collection h3 {
+  font-family: "Aboreto", serif;
+  color: white;
+}
+
+#c-main-1,
+#c-main-2 {
+  font-size: 8vmin;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+          animation: glow 1s ease-in-out infinite alternate;
+}
+
+#c-main-1 {
+  text-align: left;
+}
+
+#c-main-2 {
+  text-align: right;
+}
+
+#c-sub-1,
+#c-sub-2 {
+  font-size: 3vmin;
+}
+
+#c-sub-1 {
+  text-align: left;
+}
+
+#c-sub-2 {
+  text-align: right;
+}
+
+hr {
+  border-top: 0.5px solid white;
+  margin-top: 6vmin;
+  margin-bottom: 2vmin;
 }
 
 footer {
+  background-color: black;
+  padding: 5vmin;
   display: grid;
-  grid-template-columns: 30% 20% 50%;
+  grid-template-columns: 20% 20% 20% 40%;
 }
 
-footer > #socials > ul {
-  display: flex;
+.f-container {
+  padding: 2vmin;
+}
+
+footer > #others > ul,
+footer > #brand > ul {
   list-style-type: none;
-  justify-content: center;
+  font-family: "Arsenal", sans-serif;
+  font-size: 2vmin;
+  color: white;
 }
 
-.social-icons {
-  height: 20px;
-  width: 20px;
+footer > #others > ul > li,
+footer > #brand > ul > li,
+#subscribe h5,
+#subscribe p,
+label {
+  padding: 2vmin;
+  color: white;
+}
+
+#subscribe h5 {
+  font-family: "Aboreto", serif;
+  font-size: 4vmin;
+}
+
+.f-container li a:link,
+.f-container li a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.f-container li a:hover,
+.f-container li a:active {
+  color: white;
+  text-shadow: 0 0 4vmin #4c2882, 0 0 2vmin white;
+  transition-duration: 0.4s;
+}
+
+#subscribe p {
+  text-align: justify;
+  font-family: "Arsenal", sans-serif;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 1vmin 1vmin;
+  margin: 2vmin;
+  border: none;
+  border-bottom: 0.2vmin solid white;
+  background-color: transparent;
+  color: white;
+  font-family: "Arsenal", sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+#socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-facebook-square,
+.fa-instagram {
+  font-size: 5vmin;
+}
+
+.fa-youtube-play {
+  font-size: 4vmin;
+}
+
+.fa {
+  margin: 1.5vmin;
+  position: relative;
+  text-decoration: none;
+  width: 7vmin;
+  height: 7vmin;
+  border: 0.3vmin solid white;
+  border-radius: 50%;
+  color: white;
+}
+
+.fa::before {
+  position: absolute;
+  z-index: 1;
+  top: 1vmin;
+  left: 1vmin;
+  transform: translate -50%, -50%;
+}
+
+.fa::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.fa::after {
+  background: transparent;
+  transform: 0.4s;
+}
+
+.fa:hover:after {
+  transform: scale(1);
+  opacity: 0;
+}
+
+.fa:hover {
+  color: #4c2882;
+  background-color: white;
+  transition-duration: 0.4s;
+}
+
+::-moz-placeholder {
+  font-family: "Arsenal", sans-serif;
+  font-size: 2vmin;
+}
+
+:-ms-input-placeholder {
+  font-family: "Arsenal", sans-serif;
+  font-size: 2vmin;
+}
+
+#subscribe p,
+label,
+::placeholder {
+  font-family: "Arsenal", sans-serif;
+  font-size: 2vmin;
+}
+
+::-moz-placeholder {
+  color: grey;
+}
+
+:-ms-input-placeholder {
+  color: grey;
+}
+
+::placeholder {
+  color: grey;
+}
+
+input[type=submit] {
+  font-family: "Arsenal", sans-serif;
+  font-size: 2vmin;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 2vmin 3vmin;
+  text-decoration: none;
+  display: block;
+  margin-top: 2vmin;
+  margin-left: auto;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #4c2882;
+  transition-duration: 0.4s;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(76, 40, 130) 50%, rgb(0, 0, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: auto;
+  overflow-x: hidden;
+}
+
+#welcome-header nav {
+  width: 100%;
+}
+
+#welcome-header nav img {
+  width: 35vmin;
+  height: auto;
+  filter: invert(100%);
+  display: block;
+  margin-top: 5vmin;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#welcome-container {
+  margin: 14vmin;
+}
+
+.w-text {
+  padding: 0.5vmin;
+}
+
+#w-name {
+  font-family: "Aboreto", serif;
+  font-size: 10vmin;
+  text-align: center;
+  color: white;
+}
+
+#w-line {
+  border-top: 0.5px solid white;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
+}
+
+#w-title,
+#w-subtitle {
+  font-family: "Arsenal", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+#w-title {
+  font-size: 6vmin;
+}
+
+#w-subtitle {
+  font-size: 3vmin;
+}
+
+#discover {
+  text-align: center;
+  font-family: "Aboreto", serif;
+  margin-top: 10vmin;
+}
+
+#discover a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 3vmin 3vmin;
+}
+
+#discover a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 3vmin 3vmin;
+  transition-duration: 0.4s;
 }/*# sourceMappingURL=styles.css.map */

@@ -4,14 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arsenal">
     <link rel="stylesheet" href="/styles/styles2.css">
-    <title>Welcome to the club!</title>
+    <title>Welcome to Bulgari!</title>
     <script src="/scripts/index.js" defer></script>
 </head>
 <body>
-    <div id="welcome">
-        <p data-name></p>
-        <p id="subtext">We're so excited to meet you! Please check your inbox to verify your subscription.</p>
+
+    <header id="welcome-header">
+        <nav>
+            <img src="/assets/logo.png">
+        </nav>
+    </header>
+
+    <div id="welcome-container">
+        <div id="welcome">
+            <p data-name class="w-text" id="w-name"></p> 
+            <hr id="w-line">
+            <h2 class="w-text" id="w-title">You are now signed up to the Bulgari newsletter.</h2>
+            <p class="w-text" id="w-subtitle">Your unique discount code is waiting for you in your inbox. Thank you for subscribing!</p>
+        </div>
+    
+        <div id="discover">
+            <a href="https://www.bulgari.com/">Discover Bulgari</a>
+        </div>
     </div>
+
 </body>
 </html>

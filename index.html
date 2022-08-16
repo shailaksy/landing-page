@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arsenal">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Product Landing Page</title>
 </head>
@@ -14,76 +16,112 @@
     
     <header>
         <nav>
-            <ul>
-                <li>home</li>
-                <li><a href="#about">about us</a></li>
-                <li id="logo"></li>
-                <li><a href="#shop">shop</a></li>
-                <li>contact</li>
+            <ul id="navbar">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#about">discover</a></li>
+                <li><a href="https://www.bulgari.com/en-sa/" target="_blank"><img id="logo" src="/assets/logo.png"></a></li>
+                <li><a href="#collection">collection</a></li>
+                <li><a href="https://www.instagram.com/bulgari/" target="_blank">social</a></li>
             </ul>
-            <hr class="solid">
+    
         </nav>
     </header>
 
     <div id="headline">
-        <h1></h1>
-        <div id="subtitle"></div>
+        <div id="headline-container">
+            <div id="headline-main">
+                <h1 class="headline-media" id="title1">Omnia</h1>
+                <h1 class="headline-media" id="title2">Amethyste</h1>
+            </div> 
+            <div id="headline-sub">
+                <h3 class="headline-media">Eau de Toilette</h3>
+                <p class="headline-media">infinite scents of iris gardens, caressed with morning dew</p>
+            </div>
+        </div>
     </div>
 
     <div id="about">
-        <h3 id="about-title">inspired by movement and stillness</h3>
-        <p id="about-subtitle">We find inspiration in places that remained in our memories, the stories and experience that keep us moving and exploring, sometimes just with our most evocative of senses - our sense of smell. We value the grounding effect of a pause, of introspection and quiet, the silent rituals that nourish us to move again.</p>
+        <div id="about-container">
+            <h3 id="about-title" class="about-text">Omnia Amethyste</h3>
+            <p id="about-subtitle" class="about-text">Graceful Elegance</p>
+            <p id="about-description" class="about-text">Inspired by the shimmering hues of amethyst, the floral Omnia Amethyste is the expression of an elegant sensuality and extreme femininity. A dew-drenched blend of rose and iris creating a noble and graceful scent.</p>
+        </div>
     </div>
 
-    <div id="process">
-        <iframe width="420" height="345" src="controls=1">
-        </iframe>
-        <p></p>
+    <div id="more-info">
+        <h3>A sophisticated, nuanced bouquet</h3>
+        <div id="more-container">
+            <div class="notes">
+                <img class="note-inspo" src="assets/notes1.jpeg">
+                <h4>A fruity opening</h4>
+                <p>In the opening, the delicate fruity accents of pink grapefruit and green sap carry the pure perfume of spring.</p>
+            </div>
+            <div class="notes">
+                <img class="note-inspo" src="assets/notes2.jpeg">
+                <h4>A luxurious heart</h4>
+                <p>The fragrance's central theme is the noble Iris, a flower of great luxury and originality, blended with the fresh notes of exquisite Bulgarian rosebuds.</p>
+            </div>
+            <div class="notes">
+                <img class="note-inspo" src="assets/notes3.jpeg">
+                <h4>A sensual dry down</h4>
+                <p>The unmistakable accents of heliotrope and vibrant solar wood infuse the base notes with warmth and sensuality.</p>
+            </div>
+        </div>    
     </div>
 
-    <div id="shop">
-        <div class="product">
-
-        </div>
-        <div class="product">
-
-        </div>
-        <div class="product">
-
-        </div>
+    <div id="collection">
+        <iframe width="1200vmin" height="500vmin" src="https://www.youtube.com/embed/98OXWI24c6E" title="BVLGARI OMNIA BY MARY KATRANTZOU - An exclusive capsule edition fragrance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="collection-text">
+            <h3 class="collection-title" id="c-sub-1">The</h3>
+            <h3 class="collection-title" id="c-main-1">Omnia</h3>
+            <h3 class="collection-title" id="c-main-2">Fragrance</h3> 
+            <h3 class="collection-title" id="c-sub-2">Collection</h3>
+            <hr>
+            <div id="discover">
+                <a href="https://www.bulgari.com/">Shop Collection</a>
+            </div>
+        </div>    
     </div>
 
     <footer>
-        <div id="others">
+        <div id="others" class="f-container">
             <ul>
-                <li>about us</li>
-                <li>contact</li>
-                <li>shipping & delivery</li>
-                <li>faqs</li>
+                <li><a href="https://www.bulgari.com/en-sa/" target="_blank">Care Instructions</a></li>
+                <li><a href="https://www.bulgari.com/en-sa/" target="_blank">Aftersales Services</a></li>
+                <li><a href="https://www.bulgari.com/en-sa/" target="_blank">Digital Waranties</a></li>
+                <li><a href="https://www.bulgari.com/en-sa/" target="_blank">Book an Appointment</a></li>
+                <li><a href="https://www.bulgari.com/en-sa/" target="_blank">Returns and Exchanges</a></li>
+                <li><a href="https://www.bulgari.com/en-sa/" target="_blank">Terms and Conditions</a></li>
             </ul>
         </div>
-        <div id="socials">
+        <div id="brand" class="f-container">
             <ul>
-                <li><a href="https://facebook.com"><img class="social-icons" id="fb" src="/assets/fb.png"></a></li>
-                <li><a href="https://instagram.com"><img class="social-icons" id="ig" src="/assets/ig.png"></a></li>
-                <li><a href="https://youtube.com"><img class="social-icons" id="yt" src="/assets/yt.png"></a></li>
+                <li><a href="https://www.bulgari.com/en-sa/" target="_blank">About Bulgari</a></li>
+                <li><a href="https://www.bulgari.com/en-sa/" target="_blank">Corporate Social Responsibility</a></li>
+                <li><a href="https://www.bulgari.com/en-sa/" target="_blank">People and Careers</a></li>
+                <li><a href="https://www.bulgari.com/en-sa/" target="_blank">Brand Protection</a></li>
+                <li><a href="https://www.bulgari.com/en-sa/" target="_blank">Store Locator</a></li>
+                <li><a href="https://www.bulgari.com/en-sa/" target="_blank">Frequently Asked Questions</a></li>
             </ul>
         </div>
-        <div id="subscribe">
-            <h5>subscribe to our newsletter</h5>
-            <p>Receive exclusive offers, promotions, store updates and other exciting news from us! Get a 10% off coupon code sent to your email when you sign up.</p>
-            <form action="welcome.html" method="get>
+        <div id="socials" class="f-container">
+            <a href="https://www.facebook.com/bulgari"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/bulgari/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/Bulgari"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <div id="subscribe" class="f-container">
+            <h5>JOIN THE BULGARI WORLD</h5>
+            <p>Receive exclusive offers, promotions, store updates and other exciting news from us.</p>
+            <form action="welcome.html" method="get">
                 <label for="name">Name:</label>
-                <br>
                 <input type="text" name="name" id="name" placeholder="Your Name" required>
                 <br>
                 <label for="email">Email address:</label>
-                <br>
                 <input type="email" name="email" id="email" placeholder="abc@example.com" required>
                 <br>
                 <label for="message">Inquiries:</label>
                 <br>
-                <textarea name="message" id="message" placeholder="Message" rows="5" cols="20"></textarea>
+                <textarea name="message" id="message" placeholder="Optional Message" rows="5" cols="20"></textarea>
                 <br>
                 <input type="submit" name="button" value="Submit">
             </form>
