@@ -4,6 +4,233 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-device-width: 768px) and (max-device-height: 1024px) {
+  * {
+    overflow-x: hidden;
+  }
+  #main-header {
+    display: none;
+  }
+  #logo-insert {
+    display: block !important;
+  }
+  #hamburger-menu {
+    display: inline !important;
+  }
+  #headline {
+    background-position: 65% !important;
+    overflow: hidden;
+  }
+  #headline-container {
+    margin: 3rem !important;
+    margin-top: 1rem !important;
+    padding: 1rem !important;
+  }
+  #headline-main {
+    margin-top: 0 !important;
+  }
+  #headline-main > .headline-media {
+    font-size: 4.2rem;
+    text-align: left;
+    width: 100% !important;
+  }
+  #headline-sub {
+    text-align: left !important;
+    width: 70% !important;
+  }
+  #about {
+    height: 35rem !important;
+    overflow-y: hidden;
+    padding: 1rem !important;
+  }
+  .about-text {
+    padding: 1rem !important;
+  }
+  #about-title, #about-subtitle {
+    text-align: center !important;
+    width: 100% !important;
+  }
+  #about-title {
+    font-size: 5rem !important;
+  }
+  #about-subtitle {
+    font-size: 2rem !important;
+  }
+  #about-description {
+    text-align: justify !important;
+    width: 95% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #more-container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  #more-info h3 {
+    font-size: 1.9rem !important;
+  }
+  .notes h4, .notes p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #collection {
+    display: block !important;
+    height: auto !important;
+  }
+  iframe {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 42rem;
+    height: 22rem;
+  }
+  #welcome-header nav img {
+    width: 10rem !important;
+  }
+  #subscribe-duplicate {
+    display: block !important;
+  }
+  #subscribe-duplicate-wrap {
+    width: 70% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    grid-template-columns: 42.5% 42.5% 15% !important;
+    height: auto;
+  }
+  #subscribe {
+    display: none;
+  }
+  #collection-photo {
+    height: 10rem !important;
+  }
+  #w-name {
+    font-size: 2.8rem !important;
+  }
+  #w-title, #w-subtitle {
+    font-size: 1.2rem !important;
+  }
+  #discover {
+    margin-top: 2rem !important;
+  }
+  #discover a:link,
+#discover a:visited,
+#discover a:hover,
+#discover a:active {
+    font-size: 0.8rem !important;
+  }
+}
+@media screen and (max-device-width: 380px) and (max-device-height: 740px) {
+  * {
+    overflow-x: hidden;
+  }
+  #main-header {
+    display: none;
+  }
+  #logo-insert {
+    display: block !important;
+    top: 10px !important;
+    left: 10px !important;
+    position: absolute;
+    display: none;
+  }
+  #small-logo {
+    width: auto;
+    height: 20px !important;
+  }
+  #hamburger-menu {
+    display: inline !important;
+    top: 10px !important;
+    right: 10px !important;
+    width: 20px !important;
+    height: 20px !important;
+  }
+  #hamburger-menu li {
+    font-size: 0.7rem !important;
+    line-height: 1.5rem !important;
+  }
+  #headline {
+    background-position: 70% !important;
+  }
+  #headline-container {
+    margin: 1.5rem !important;
+  }
+  #headline-main h1 {
+    font-size: 2.4rem !important;
+    text-align: center !important;
+  }
+  #headline-sub {
+    width: 100% !important;
+    padding-top: 2.3rem !important;
+  }
+  #headline-sub h3 {
+    font-size: 1.2rem !important;
+    text-align: center !important;
+  }
+  #headline-sub p {
+    font-size: 1rem !important;
+    text-align: center !important;
+    letter-spacing: 0 !important;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #about-title {
+    font-size: 3rem !important;
+  }
+  #about-subtitle {
+    font-size: 1.6rem !important;
+  }
+  #about-description {
+    font-size: 0.9rem !important;
+  }
+  #more-info {
+    padding: 1.8rem !important;
+  }
+  #more-info h3 {
+    padding: 0 !important;
+    padding-top: 1.2rem !important;
+    font-size: 1.5rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+  .notes h4 {
+    font-size: 1.3rem !important;
+    letter-spacing: 0 !important;
+  }
+  #collection {
+    padding: 1.5rem !important;
+  }
+  #c-main {
+    font-size: 2.8rem !important;
+  }
+  iframe {
+    width: 100%;
+  }
+  #welcome-header nav img {
+    width: 6rem !important;
+  }
+  #collection-photo {
+    height: 5rem !important;
+  }
+  #welcome-container {
+    margin: 1rem !important;
+    padding: 1.2rem !important;
+  }
+  #w-name {
+    font-size: 1.5rem !important;
+  }
+  #w-title, #w-subtitle {
+    font-size: 0.7rem !important;
+  }
+  #discover a:link,
+#discover a:visited,
+#discover a:hover,
+#discover a:active {
+    font-size: 0.5rem !important;
+    padding: 0.3rem 0.5rem !important;
+  }
+}
 @-webkit-keyframes animated_text {
   0% {
     background-position: 0px 50%;
@@ -15,7 +242,6 @@
     background-position: 0px 50%;
   }
 }
-
 @keyframes animated_text {
   0% {
     background-position: 0px 50%;
@@ -74,7 +300,7 @@ body {
 }
 
 #welcome-header nav img {
-  width: 35vmin;
+  width: 14rem;
   height: auto;
   filter: invert(100%);
   display: block;
@@ -83,19 +309,30 @@ body {
   margin-right: auto;
 }
 
+#collection-photo {
+  margin-top: 3vmin;
+  height: 16rem;
+  width: 100%;
+}
+
 #welcome-container {
-  margin: 14vmin;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
+  padding: 4rem;
 }
 
 .w-text {
-  padding: 0.5vmin;
+  padding: 0.2rem;
 }
 
 #w-name {
   font-family: "Aboreto", serif;
-  font-size: 10vmin;
+  font-size: 5rem;
   text-align: center;
   color: white;
+  -webkit-animation: fadeIn 6s ease-in;
+          animation: fadeIn 6s ease-in;
 }
 
 #w-line {
@@ -112,32 +349,34 @@ body {
 }
 
 #w-title {
-  font-size: 6vmin;
+  font-size: 3rem;
 }
 
 #w-subtitle {
-  font-size: 3vmin;
+  font-size: 1.3rem;
 }
 
 #discover {
   text-align: center;
   font-family: "Aboreto", serif;
-  margin-top: 10vmin;
+  margin-top: 5rem;
 }
 
 #discover a:link,
-a:visited {
+#discover a:visited {
   text-decoration: none;
   color: white;
   background-color: black;
-  padding: 3vmin 3vmin;
+  padding: 1rem 1rem;
+  font-size: 1.3rem;
 }
 
 #discover a:hover,
-a:active {
+#discover a:active {
   text-decoration: none;
   color: black;
   background-color: white;
-  padding: 3vmin 3vmin;
+  padding: 1rem 1rem;
   transition-duration: 0.4s;
+  font-size: 1.3rem;
 }/*# sourceMappingURL=styles2.css.map */

@@ -3,6 +3,7 @@ footer {
     padding: 5vmin;
     display: grid;
     grid-template-columns: 20% 20% 20% 40%;
+    border: none;
 }
 
 .f-container {
@@ -21,7 +22,7 @@ footer > #others > ul > li,
 footer > #brand > ul > li,
 #subscribe h5,
 #subscribe p,
-label {
+#subscribe label {
     padding: 2vmin;
     color: white;
 }
@@ -126,7 +127,7 @@ textarea {
 }
 
 #subscribe p, 
-label, 
+#subscribe label, 
 ::placeholder {
     font-family: $font-2;
     font-size: 2vmin;

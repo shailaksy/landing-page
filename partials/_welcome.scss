@@ -13,7 +13,7 @@ body {
 }
 
 #welcome-header nav img {
-    width: 35vmin;
+    width: 14rem;
     height: auto;
     filter: invert(100%);
     display: block;
@@ -22,19 +22,29 @@ body {
     margin-right: auto;
 }
 
+#collection-photo {
+    margin-top: 3vmin;
+    height: 16rem;
+    width: 100%;
+}
+
 #welcome-container {
-    margin: 14vmin;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    padding: 4rem;
 }
 
 .w-text {
-    padding: 0.5vmin;
+    padding: 0.2rem;
 }
 
 #w-name {
     font-family: $font-stack;
-    font-size: 10vmin;
+    font-size: 5rem;
     text-align: center;
     color: white;
+    animation: fadeIn 6s ease-in;
 }
 
 #w-line {
@@ -51,32 +61,34 @@ body {
 }
 
 #w-title {
-    font-size: 6vmin;
+    font-size: 3rem;
 }
 
 #w-subtitle {
-    font-size: 3vmin;
+    font-size: 1.3rem;
 }
 
 #discover {
     text-align: center;
     font-family: $font-stack;
-    margin-top: 10vmin;
+    margin-top: 5rem;
 }
 
 #discover a:link,
-a:visited {
+#discover a:visited {
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 3vmin 3vmin;
+    padding: 1rem 1rem;
+    font-size: 1.3rem;
 }
 
 #discover a:hover,
-a:active {
+#discover a:active {
     text-decoration: none;
     color: black;
     background-color: white;
-    padding: 3vmin 3vmin;
+    padding: 1rem 1rem;
     transition-duration: 0.4s;
+    font-size: 1.3rem;
 }

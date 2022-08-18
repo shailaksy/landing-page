@@ -1,5 +1,5 @@
 #headline {
-    height: 100vmin;
+    height: 50rem;
     padding-top: 10vmin;
     color: $primary-color;
     background: url(/assets/bg.png) no-repeat;
@@ -7,13 +7,9 @@
 }
 
 #headline-container {
-    margin: 10vmin;
-    margin-top: 15vmin;
-    padding: 2vmin;
-}
-
-.headline-media {
-    text-shadow: 1vmin 1vmin 1.5vmin grey;
+    margin: 6rem;
+    margin-top: 4rem;
+    padding: 1rem;
 }
 
 #headline-main h1 {
@@ -23,6 +19,7 @@
     background: linear-gradient(-45deg, #584c67, $primary-color, black, #a864f6, rgb(228, 228, 166), white);
 	background-size: 300%;
     -webkit-background-clip: text;
+    background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: animated_text 12s ease-in-out infinite;
 	-moz-animation: animated_text 12s ease-in-out infinite;
@@ -30,26 +27,27 @@
 }
 
 #title1 {
-    font-size: 9vmin;
+    font-size: 9rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 #title2 {
-    font-size: 13.5vmin;
+    font-size: 6rem;
     text-align: center;
 }
 
 #headline-sub {
-    padding-top: 8vmin;
+    padding-top: 3rem;
     text-align: center;
-    width: 60%;
+    width: 57%;
+    text-shadow: 1vmin 1vmin 1.5vmin grey;
 }
 
 #headline-sub h3 {
     font-family: $font-stack;
-    font-size: 5vmin;
-    letter-spacing: 3vmin;
+    font-size: 2.4rem;
+    letter-spacing: 1rem;
     padding: 1.2vmin;
     animation: fadeIn 7s ease-in;
 }
@@ -57,13 +55,8 @@
 #headline-sub p {
     font-family: $font-2;
     font-style: italic;
-    font-size: 3vmin;
+    font-size: 1.3rem;
     padding: 1.2vmin;
-    letter-spacing: 0.3vmin;
+    letter-spacing: 0.2rem;
     animation: fadeIn 7s ease-in;
-}
-
-#omnia {
-    height: 65vmin;
-    width: 65vmin;
 }

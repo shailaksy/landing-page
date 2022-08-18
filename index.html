@@ -11,21 +11,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Product Landing Page</title>
+    <script src="/scripts/index.js" defer></script>
 </head>
 <body>
     
-    <header>
+    <header id="main-header">
         <nav>
-            <ul id="navbar">
+            <ul id="navbar" class="topnav">
                 <li><a href="index.html">home</a></li>
                 <li><a href="#about">discover</a></li>
                 <li><a href="https://www.bulgari.com/en-sa/" target="_blank"><img id="logo" src="/assets/logo.png"></a></li>
                 <li><a href="#collection">collection</a></li>
                 <li><a href="https://www.instagram.com/bulgari/" target="_blank">social</a></li>
             </ul>
-    
         </nav>
     </header>
+    
+    <div id="logo-insert">
+        <a href="https://www.bulgari.com/en-sa/" target="_blank">
+            <img id="small-logo" src="/assets/logo.png">
+        </a>
+    </div>
+
+    <input type="checkbox" id="hamburger-input" class="burger-shower"/>
+    <label id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+            <ul id="sidebar">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#about">discover</a></li>
+                <li><a href="#collection">collection</a></li>
+                <li><a href="https://www.instagram.com/bulgari/" target="_blank">social</a></li>
+            </ul>
+        </nav>
+    </label>
 
     <div id="headline">
         <div id="headline-container">
@@ -70,17 +88,35 @@
     </div>
 
     <div id="collection">
-        <iframe width="1200vmin" height="500vmin" src="https://www.youtube.com/embed/98OXWI24c6E" title="BVLGARI OMNIA BY MARY KATRANTZOU - An exclusive capsule edition fragrance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div id="collection-text">
             <h3 class="collection-title" id="c-sub-1">The</h3>
-            <h3 class="collection-title" id="c-main-1">Omnia</h3>
-            <h3 class="collection-title" id="c-main-2">Fragrance</h3> 
+            <h3 class="collection-title" id="c-main">Omnia Fragrance</h3> 
             <h3 class="collection-title" id="c-sub-2">Collection</h3>
-            <hr>
-            <div id="discover">
-                <a href="https://www.bulgari.com/">Shop Collection</a>
-            </div>
-        </div>    
+        </div>
+        <iframe width="1200vmin" height="500vmin" src="https://www.youtube.com/embed/98OXWI24c6E" title="BVLGARI OMNIA BY MARY KATRANTZOU - An exclusive capsule edition fragrance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="discover">
+            <a href="https://www.bulgari.com/">Shop Collection</a>
+        </div>   
+    </div>
+
+    <div id="subscribe-duplicate" class="f-container">
+        <div id="subscribe-duplicate-wrap">
+        <h5>JOIN THE BULGARI WORLD</h5>
+        <p>Receive exclusive offers, promotions, store updates and other exciting news from us.</p>
+        <form action="welcome.html" method="get">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name-dupe" placeholder="Your Name" required>
+            <br>
+            <label for="email">Email address:</label>
+            <input type="email" name="email" id="email-dupe" placeholder="abc@example.com" required>
+            <br>
+            <label for="message">Inquiries:</label>
+            <br>
+            <textarea name="message" id="message-dupe" placeholder="Optional Message" rows="5" cols="20"></textarea>
+            <br>
+            <input type="submit" name="button" value="Submit">
+        </form>
+    </div>
     </div>
 
     <footer>

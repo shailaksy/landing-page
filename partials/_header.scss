@@ -13,9 +13,12 @@ nav {
     font-family: $font-stack;
     font-size: 2vmin;
     color: white;
-    text-transform: uppercase;
     letter-spacing: 0.5vmin;
     background-color: rgba(0, 0, 0, 0.55);
+}
+
+#navbar .icon {
+    display: none;
 }
 
 #navbar li {
@@ -48,4 +51,21 @@ nav {
 
 .solid {
     border: 0.5px solid white;
+}
+
+#logo-insert {
+    top: 20px;
+    left: 20px; 
+    position: absolute;
+    display: none;
+}
+
+#small-logo {
+    width: auto;
+    height: 35px;
+}
+
+#logo-insert a:hover {
+    text-shadow: 0 0 2vmin $primary-color, 0 0 4vmin white;
+    transition-duration: 0.4s;
 }

@@ -1,0 +1,29 @@
+#subscribe-duplicate {
+    background-color: black;
+    padding: 5vmin;
+    display: none;
+    border: none;
+}
+
+#subscribe-duplicate h5,
+#subscribe-duplicate p,
+#subscribe-duplicate label {
+    padding: 2vmin;
+    color: white;
+}
+
+#subscribe-duplicate h5 {
+    font-family: $font-stack;
+    font-size: 4vmin;
+}
+
+#subscribe-duplicate p {
+    text-align: justify;
+    font-family: $font-2;
+}
+
+#subscribe-duplicate p, 
+#subscribe-duplicate label {
+    font-family: $font-2;
+    font-size: 2vmin;
+}
