@@ -429,7 +429,6 @@ nav {
 #headline {
   height: 50rem;
   padding-top: 10vmin;
-  color: #4c2882;
   background: url(/assets/bg.png) no-repeat;
   background-size: cover;
 }
@@ -469,6 +468,7 @@ nav {
   padding-top: 3rem;
   text-align: center;
   width: 57%;
+  color: white;
   text-shadow: 1vmin 1vmin 1.5vmin grey;
 }
 

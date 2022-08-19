@@ -1,7 +1,6 @@
 #headline {
     height: 50rem;
     padding-top: 10vmin;
-    color: $primary-color;
     background: url(/assets/bg.png) no-repeat;
     background-size: cover;
 }
@@ -41,6 +40,7 @@
     padding-top: 3rem;
     text-align: center;
     width: 57%;
+    color: white;
     text-shadow: 1vmin 1vmin 1.5vmin grey;
 }
 
