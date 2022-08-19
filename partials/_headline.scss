@@ -45,18 +45,15 @@
 }
 
 #headline-sub h3 {
-    font-family: $font-stack;
-    font-size: 2.4rem;
-    letter-spacing: 1rem;
+    @include subheading-text;
     padding: 1.2vmin;
-    animation: fadeIn 7s ease-in;
+    @include fadeIn-animation;
 }
 
 #headline-sub p {
-    font-family: $font-2;
+    @include description-text;
     font-style: italic;
-    font-size: 1.3rem;
     padding: 1.2vmin;
     letter-spacing: 0.2rem;
-    animation: fadeIn 7s ease-in;
+    @include fadeIn-animation;
 }

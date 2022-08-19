@@ -10,15 +10,10 @@ nav {
     list-style-type: none;
     justify-content: space-evenly;
     align-items: center;
-    font-family: $font-stack;
-    font-size: 2vmin;
+    @include title-text;
     color: white;
     letter-spacing: 0.5vmin;
     background-color: rgba(0, 0, 0, 0.55);
-}
-
-#navbar .icon {
-    display: none;
 }
 
 #navbar li {
@@ -39,8 +34,7 @@ nav {
 #navbar li a:hover,
 #navbar li a:active {
     color: white;
-    text-shadow: 0 0 2vmin $primary-color, 0 0 4vmin white;
-    transition-duration: 0.4s;
+    @include custom-text-shadow;
 }
 
 #logo {
@@ -66,6 +60,5 @@ nav {
 }
 
 #logo-insert a:hover {
-    text-shadow: 0 0 2vmin $primary-color, 0 0 4vmin white;
-    transition-duration: 0.4s;
+    @include custom-text-shadow;
 }

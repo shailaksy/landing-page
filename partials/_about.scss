@@ -20,22 +20,18 @@
     color: white;
 }
 
-#about-title,
-#about-subtitle {
-    font-family: $font-stack;
-}
-
 #about-title {
-    font-size: 6rem;
+    @include header-text;
+    letter-spacing: 0.4rem;
     text-align: right;
     text-shadow: 1vmin 1vmin 1.5vmin black;
 }
 
 #about-subtitle {
-    font-size: 3rem;
+    @include subheading-text;
     text-align: center;
     font-style: italic;
-    letter-spacing: 0.7rem;
+    letter-spacing: 0.8rem;
     text-shadow: 1vmin 1vmin 1.5vmin black;
 }
 

@@ -13,8 +13,7 @@ footer {
 footer > #others > ul,
 footer > #brand > ul {
     list-style-type: none;
-    font-family: $font-2;
-    font-size: 2vmin;
+    @include medium-body-text;
     color: white;
 }
 
@@ -28,8 +27,7 @@ footer > #brand > ul > li,
 }
 
 #subscribe h5 {
-    font-family: $font-stack;
-    font-size: 4vmin;
+    @include title-text;
 }
 
 .f-container li a:link, 
@@ -41,13 +39,18 @@ footer > #brand > ul > li,
 .f-container li a:hover,
 .f-container li a:active {
     color: white;
-    text-shadow: 0 0 4vmin $primary-color, 0 0 2vmin white;
-    transition-duration: 0.4s;
+    @include custom-text-shadow;
+}
+
+#others, 
+#brand {
+    display: flex;
+    flex-direction: column;
 }
 
 #subscribe p {
     text-align: justify;
-    font-family: $font-2;
+    @include description-text;
 }
 
 input[type=text],
@@ -60,7 +63,7 @@ textarea {
     border-bottom: 0.2vmin solid white;
     background-color: transparent;
     color: white;
-    font-family: $font-2;
+    @include description-text;
 }
 
 textarea {
@@ -138,8 +141,7 @@ textarea {
 }
 
 input[type=submit] {
-    font-family: $font-2;
-    font-size: 2vmin;
+    @include description-text;
     text-align: center;
     color: white;
     background-color: transparent;

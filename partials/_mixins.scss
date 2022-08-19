@@ -1,0 +1,58 @@
+@mixin header-text {
+    font-family: $font-stack;
+    font-size: 5rem;
+}
+
+@mixin medium-heading-text {
+    font-family: $font-stack;
+    font-size: 3rem;
+}
+
+@mixin subheading-text {
+    font-family: $font-stack;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+}
+
+@mixin title-text {
+    font-family: $font-stack;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+@mixin medium-body-text {
+    font-family: $font-2;
+    font-size: 1.4rem;
+}
+
+@mixin description-text {
+    font-family: $font-2;
+    font-size: 1.3rem;
+}
+
+@mixin custom-text-shadow {
+    text-shadow: 0 0 2vmin $primary-color, 0 0 4vmin white;
+    transition-duration: 0.4s;
+}
+
+@mixin square-img {
+    height: 20rem;
+    width: 20rem;
+}
+
+@mixin fadeIn-animation {
+    animation: fadeIn 7s ease-in;
+}
+
+@mixin blur {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+@mixin hover-to-unblur {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+

@@ -84,6 +84,11 @@
     width: 42rem;
     height: 22rem;
   }
+  #others > ul > li,
+#brand > ul > li,
+input[type=submit] {
+    font-size: 0.9rem !important;
+  }
   #welcome-header nav img {
     width: 10rem !important;
   }
@@ -198,6 +203,9 @@
     font-size: 1.3rem !important;
     letter-spacing: 0 !important;
   }
+  .notes p {
+    font-size: 0.8rem !important;
+  }
   #collection {
     padding: 1.5rem !important;
   }
@@ -206,6 +214,11 @@
   }
   iframe {
     width: 100%;
+  }
+  #others > ul > li,
+#brand > ul > li,
+input[type=submit] {
+    font-size: 0.5rem !important;
   }
   #welcome-header nav img {
     width: 6rem !important;
@@ -298,14 +311,11 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   font-family: "Aboreto", serif;
-  font-size: 2vmin;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
   color: white;
   letter-spacing: 0.5vmin;
   background-color: rgba(0, 0, 0, 0.55);
-}
-
-#navbar .icon {
-  display: none;
 }
 
 #navbar li {
@@ -464,7 +474,7 @@ nav {
 
 #headline-sub h3 {
   font-family: "Aboreto", serif;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   letter-spacing: 1rem;
   padding: 1.2vmin;
   -webkit-animation: fadeIn 7s ease-in;
@@ -473,8 +483,8 @@ nav {
 
 #headline-sub p {
   font-family: "Arsenal", sans-serif;
-  font-style: italic;
   font-size: 1.3rem;
+  font-style: italic;
   padding: 1.2vmin;
   letter-spacing: 0.2rem;
   -webkit-animation: fadeIn 7s ease-in;
@@ -502,22 +512,21 @@ nav {
   color: white;
 }
 
-#about-title,
-#about-subtitle {
-  font-family: "Aboreto", serif;
-}
-
 #about-title {
-  font-size: 6rem;
+  font-family: "Aboreto", serif;
+  font-size: 5rem;
+  letter-spacing: 0.4rem;
   text-align: right;
   text-shadow: 1vmin 1vmin 1.5vmin black;
 }
 
 #about-subtitle {
-  font-size: 3rem;
+  font-family: "Aboreto", serif;
+  font-size: 2.5rem;
+  letter-spacing: 1rem;
   text-align: center;
   font-style: italic;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.8rem;
   text-shadow: 1vmin 1vmin 1.5vmin black;
 }
 
@@ -536,7 +545,8 @@ nav {
 
 #more-info h3 {
   font-family: "Aboreto", serif;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  letter-spacing: 1rem;
   text-align: center;
   padding: 2rem;
   letter-spacing: 0.7rem;
@@ -570,6 +580,7 @@ nav {
 .notes h4 {
   font-family: "Aboreto", serif;
   font-size: 1.5rem;
+  letter-spacing: 0.2rem;
   text-align: center;
   letter-spacing: 0.2rem;
   padding-top: 1rem;
@@ -577,7 +588,7 @@ nav {
 
 .notes p {
   font-family: "Arsenal", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-align: justify;
   padding: 1rem;
 }
@@ -599,17 +610,16 @@ nav {
   color: black;
 }
 
-#collection-text h3 {
-  font-family: "Aboreto", serif;
-}
-
 #c-main {
-  font-size: 4rem;
+  font-family: "Aboreto", serif;
+  font-size: 5rem;
 }
 
 #c-sub-1,
 #c-sub-2 {
-  font-size: 1.6rem;
+  font-family: "Aboreto", serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
 }
 
 iframe {
@@ -670,7 +680,7 @@ footer > #others > ul,
 footer > #brand > ul {
   list-style-type: none;
   font-family: "Arsenal", sans-serif;
-  font-size: 2vmin;
+  font-size: 1.4rem;
   color: white;
 }
 
@@ -685,7 +695,8 @@ footer > #brand > ul > li,
 
 #subscribe h5 {
   font-family: "Aboreto", serif;
-  font-size: 4vmin;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
 }
 
 .f-container li a:link,
@@ -697,13 +708,20 @@ footer > #brand > ul > li,
 .f-container li a:hover,
 .f-container li a:active {
   color: white;
-  text-shadow: 0 0 4vmin #4c2882, 0 0 2vmin white;
+  text-shadow: 0 0 2vmin #4c2882, 0 0 4vmin white;
   transition-duration: 0.4s;
+}
+
+#others,
+#brand {
+  display: flex;
+  flex-direction: column;
 }
 
 #subscribe p {
   text-align: justify;
   font-family: "Arsenal", sans-serif;
+  font-size: 1.3rem;
 }
 
 input[type=text],
@@ -717,6 +735,7 @@ textarea {
   background-color: transparent;
   color: white;
   font-family: "Arsenal", sans-serif;
+  font-size: 1.3rem;
 }
 
 textarea {
@@ -813,7 +832,7 @@ textarea {
 
 input[type=submit] {
   font-family: "Arsenal", sans-serif;
-  font-size: 2vmin;
+  font-size: 1.3rem;
   text-align: center;
   color: white;
   background-color: transparent;

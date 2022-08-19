@@ -15,30 +15,22 @@
     color: black;
 }
 
-#collection-text h3 {
-    font-family: $font-stack;
-}
-
 #c-main {
-    font-size: 4rem;
+    @include header-text;
 }
 
 #c-sub-1,
 #c-sub-2 {
-    font-size: 1.6rem;
+    @include title-text;
 }
 
 iframe {
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    @include blur;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
 iframe:hover {
-    -webkit-filter: blur(0);
-    filter: blur(0);
+    @include hover-to-unblur;
 }

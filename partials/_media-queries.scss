@@ -100,6 +100,12 @@
         width: 42rem;
         height: 22rem;
     }
+
+    #others > ul > li,
+    #brand > ul > li,
+    input[type=submit] {
+        font-size: 0.9rem !important;
+    }
     
     #welcome-header nav img {
         width: 10rem !important;
@@ -247,6 +253,10 @@
             letter-spacing: 0 !important;
         }
 
+        .notes p {
+            font-size: 0.8rem !important;
+        }
+
         #collection {
             padding: 1.5rem !important;
         }
@@ -259,7 +269,11 @@
             width: 100%;
         }
 
-
+        #others > ul > li,
+        #brand > ul > li,
+        input[type=submit] {
+            font-size: 0.5rem !important;
+        }
 
         #welcome-header nav img {
             width: 6rem !important;
