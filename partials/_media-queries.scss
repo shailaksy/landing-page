@@ -1,6 +1,4 @@
-@media screen 
-    and (max-device-width: 768px)
-    and (max-device-height: 1024px) {
+@media screen and (max-device-width: 768px) and (max-device-height: 1024px) {
     
     * {
         overflow-x: hidden;
@@ -155,9 +153,7 @@
 
 }
 
-@media screen
-    and (max-device-width: 380px) 
-    and (max-device-height: 740px) {
+@media screen and (max-device-width: 380px) and (max-device-height: 740px) {
 
         * {
             overflow-x: hidden;

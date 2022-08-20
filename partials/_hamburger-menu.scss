@@ -44,12 +44,14 @@
     line-height: 3rem;
     text-align: center;
     font-size: 1.3rem;
+    z-index: 99;
 }
   
 #hamburger-menu a,
 #hamburger-menu a:visited {
     color: white;
     text-decoration: none;
+    z-index: 99;
 }
   
 #hamburger-menu a:hover,
