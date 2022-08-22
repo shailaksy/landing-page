@@ -431,7 +431,7 @@ nav {
 #headline {
   height: 50rem;
   padding-top: 10vmin;
-  background: url(../assets/bg.png) no-repeat;
+  background: url("../assets/bg.png") no-repeat;
   background-size: cover;
 }
 
@@ -495,7 +495,7 @@ nav {
 
 #about {
   padding: 8rem;
-  background: url(../assets/crystal.gif) no-repeat;
+  background: url("../assets/crystal.gif") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: 45rem;
